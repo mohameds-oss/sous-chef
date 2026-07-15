@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+
+  /* Warm neutral palette */
+  --color-cream: #fdfaf4;
+  --color-cream-deep: #f7f0e4;
+  --color-paper: #ffffff;
+  --color-ink: #2b2620;
+  --color-ink-soft: #5a5248;
+  --color-ink-faint: #918878;
+
+  --color-sage: #7c9473;
+  --color-sage-deep: #5f7a58;
+  --color-sage-soft: #e4ebe0;
+
+  --color-orange: #d97a4c;
+  --color-orange-deep: #b8613a;
+  --color-orange-soft: #f8e6da;
+
+  --color-gold: #d4a24c;
+
+  --background: var(--color-cream);
+  --surface: var(--color-paper);
+  --surface-muted: var(--color-cream-deep);
+  --foreground: var(--color-ink);
+  --foreground-muted: var(--color-ink-soft);
+  --foreground-faint: var(--color-ink-faint);
+  --border: rgba(43, 38, 32, 0.1);
+  --accent: var(--color-sage);
+  --accent-deep: var(--color-sage-deep);
+  --accent-soft: var(--color-sage-soft);
+  --brand: var(--color-orange);
+  --brand-deep: var(--color-orange-deep);
+  --brand-soft: var(--color-orange-soft);
+
+  --shadow-color: 30 25% 30%;
+  --shadow-soft: 0 2px 8px -2px hsl(var(--shadow-color) / 0.12), 0 8px 24px -8px hsl(var(--shadow-color) / 0.10);
+  --shadow-card: 0 1px 3px hsl(var(--shadow-color) / 0.08), 0 12px 32px -12px hsl(var(--shadow-color) / 0.18);
+  --shadow-lift: 0 20px 48px -16px hsl(var(--shadow-color) / 0.28);
+
+  --match-perfect: #4d9463;
+  --match-great: #4a7fb5;
+  --match-okay: #c99a2e;
+  --match-low: #9a938a;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --background: #1a1712;
+  --surface: #221e18;
+  --surface-muted: #2a251d;
+  --foreground: #f3ede2;
+  --foreground-muted: #c9bfaf;
+  --foreground-faint: #8f8575;
+  --border: rgba(243, 237, 226, 0.1);
+  --accent: #8fae84;
+  --accent-deep: #a9c49f;
+  --accent-soft: #2c3527;
+  --brand: #e08f5f;
+  --brand-deep: #eda879;
+  --brand-soft: #3a2a1f;
+
+  --shadow-color: 0 0% 0%;
+  --shadow-soft: 0 2px 8px -2px hsl(var(--shadow-color) / 0.35), 0 8px 24px -8px hsl(var(--shadow-color) / 0.35);
+  --shadow-card: 0 1px 3px hsl(var(--shadow-color) / 0.3), 0 12px 32px -12px hsl(var(--shadow-color) / 0.5);
+  --shadow-lift: 0 20px 48px -16px hsl(var(--shadow-color) / 0.6);
+
+  --match-perfect: #6bbf82;
+  --match-great: #6fa2dd;
+  --match-okay: #e0b64f;
+  --match-low: #7d7669;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --background: #1a1712;
+    --surface: #221e18;
+    --surface-muted: #2a251d;
+    --foreground: #f3ede2;
+    --foreground-muted: #c9bfaf;
+    --foreground-faint: #8f8575;
+    --border: rgba(243, 237, 226, 0.1);
+    --accent: #8fae84;
+    --accent-deep: #a9c49f;
+    --accent-soft: #2c3527;
+    --brand: #e08f5f;
+    --brand-deep: #eda879;
+    --brand-soft: #3a2a1f;
+    --shadow-color: 0 0% 0%;
+    --match-perfect: #6bbf82;
+    --match-great: #6fa2dd;
+    --match-okay: #e0b64f;
+    --match-low: #7d7669;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-faint: var(--foreground-faint);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-soft: var(--accent-soft);
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-soft: var(--brand-soft);
+  --color-match-perfect: var(--match-perfect);
+  --color-match-great: var(--match-great);
+  --color-match-okay: var(--match-okay);
+  --color-match-low: var(--match-low);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+
+  --shadow-soft: var(--shadow-soft);
+  --shadow-card: var(--shadow-card);
+  --shadow-lift: var(--shadow-lift);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: var(--color-brand-soft);
+  color: var(--color-foreground);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.85); }
+  70% { transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-pop-in {
+  animation: pop-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
