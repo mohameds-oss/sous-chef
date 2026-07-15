@@ -26,3 +26,17 @@ export async function toggleSavedRecipeAction(
   revalidatePath("/saved");
   return { saved: true };
 }
+
+export async function updateSavedRecipeFolderAction(
+  recipeId: string,
+  folder: string
+): Promise<void> {
+  const user = await getCurrentUser();
+  if (!user) return;
+
+  await db.savedRecipe.update({
+    where: { userId_recipeId: { userId: user.id, recipeId } },
+    data: { folder: folder.trim() || "All Recipes" },
+  });
+  revalidatePath("/saved");
+}

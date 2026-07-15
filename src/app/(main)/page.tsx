@@ -52,8 +52,8 @@ export default async function HomePage() {
             What can you cook <br className="hidden sm:block" /> with what you have?
           </h1>
           <p className="mt-5 text-lg text-foreground-muted max-w-xl mx-auto">
-            Tell Sous-Chef what's in your kitchen, and we'll find recipes ranked by how well they
-            match — then guide you through every step.
+            Tell Sous-Chef what&rsquo;s in your kitchen, and we&rsquo;ll find recipes ranked by how well
+            they match — then guide you through every step.
           </p>
         </div>
 

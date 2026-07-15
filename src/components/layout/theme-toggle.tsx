@@ -8,6 +8,9 @@ export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
+  // Deliberate: next-themes only knows the resolved theme after hydration,
+  // so this guards against an SSR/client mismatch on first paint.
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setMounted(true), []);
 
   return (

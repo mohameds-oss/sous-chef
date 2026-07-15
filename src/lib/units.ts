@@ -63,6 +63,15 @@ function toWeightG(g: number) {
   return { amount: Math.round(g), unit: "g" };
 }
 
+/** Human-friendly "amount + unit" for an ingredient, in US units, handling
+ * the count-like units ("whole", "to taste", etc.) that shouldn't be
+ * printed literally next to a number. */
+export function formatIngredientAmount(amount: number, unit: Unit | string): string {
+  if (unit === "to taste") return "To taste";
+  if (unit === "whole") return formatAmount(amount);
+  return `${formatAmount(amount)} ${unit}`;
+}
+
 /** Convert an ingredient amount to the requested unit system for display.
  * Non-convertible units (count-based, "to taste", already-metric) pass
  * through unchanged. */
@@ -78,11 +87,11 @@ export function convertUnit(
       return {
         amount: convertedAmount,
         unit: convertedUnit,
-        display: `${formatAmount(convertedAmount)} ${convertedUnit}`,
+        display: formatIngredientAmount(convertedAmount, convertedUnit),
       };
     }
   }
-  return { amount, unit, display: `${formatAmount(amount)}${unit === "whole" || unit === "clove" || unit === "slice" || unit === "piece" || unit === "can" ? "" : " "}${unit === "whole" ? "" : unit}`.trim() };
+  return { amount, unit, display: formatIngredientAmount(amount, unit) };
 }
 
 export const SERVING_MULTIPLIERS = [0.5, 1, 2] as const;
