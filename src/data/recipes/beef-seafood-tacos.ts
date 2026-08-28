@@ -437,7 +437,7 @@ export const recipes: Recipe[] = [
     name: "Korean BBQ Beef",
     cuisine: "Korean",
     difficulty: "Medium",
-    prepTimeMinutes: 15,
+    prepTimeMinutes: 30,
     cookTimeMinutes: 10,
     servings: 4,
     dietaryTags: ["Dairy-Free"],
@@ -537,8 +537,9 @@ export const recipes: Recipe[] = [
       {
         id: "marinate",
         instruction:
-          "Toss the sliced beef in the marinade, cover, and refrigerate.",
-        timerMinutes: 15,
+          "Toss the sliced beef in the marinade, cover, and refrigerate for at least 30 minutes.",
+        tip: "Because the beef is sliced so thin, 30 minutes is enough to pick up real flavor, though up to a few hours deepens it further.",
+        timerMinutes: 30,
       },
       {
         id: "heat-pan",
@@ -1901,7 +1902,7 @@ export const recipes: Recipe[] = [
     cuisine: "Persian",
     difficulty: "Easy",
     prepTimeMinutes: 5,
-    cookTimeMinutes: 10,
+    cookTimeMinutes: 6,
     servings: 4,
     dietaryTags: ["Pescatarian", "Gluten-Free", "Low-Carb"],
     image: { emoji: "🦐" },
@@ -1987,9 +1988,9 @@ export const recipes: Recipe[] = [
       {
         id: "add-shrimp",
         instruction:
-          "Add the shrimp and the saffron liquid and cook, stirring, until the shrimp are pink and just opaque.",
-        tip: "Add the shrimp in a single layer so they sear rather than steam in their own liquid.",
-        timerMinutes: 8,
+          "Add the shrimp and the saffron liquid and cook, stirring occasionally, until the shrimp are pink and just opaque, 3-4 minutes.",
+        tip: "Add the shrimp in a single layer so they sear rather than steam in their own liquid, and pull them the moment they turn opaque — shrimp turn rubbery fast if left on the heat too long.",
+        timerMinutes: 4,
       },
       {
         id: "finish",

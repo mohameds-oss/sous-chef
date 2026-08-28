@@ -4,6 +4,7 @@ export type Cuisine =
   | "American"
   | "Italian"
   | "Mexican"
+  | "Chinese"
   | "Japanese"
   | "Korean"
   | "Thai"

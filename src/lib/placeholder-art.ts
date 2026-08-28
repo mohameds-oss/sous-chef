@@ -7,6 +7,7 @@ export const CUISINE_GRADIENTS: Record<Cuisine, [string, string]> = {
   American: ["#e8a86c", "#c9694a"],
   Italian: ["#dfae5a", "#a3593f"],
   Mexican: ["#e2895a", "#b8433c"],
+  Chinese: ["#d94f4f", "#8f2d2d"],
   Japanese: ["#e8c3a6", "#c1595f"],
   Korean: ["#e0765f", "#9c3b50"],
   Thai: ["#8fae63", "#4f7a5b"],

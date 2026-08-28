@@ -940,7 +940,7 @@ export const recipes: Recipe[] = [
   {
     id: "vegetable-stir-fry",
     name: "Vegetable Stir Fry",
-    cuisine: "Japanese",
+    cuisine: "Chinese",
     difficulty: "Easy",
     prepTimeMinutes: 8,
     cookTimeMinutes: 7,
@@ -1678,7 +1678,7 @@ export const recipes: Recipe[] = [
     cuisine: "Persian",
     difficulty: "Hard",
     prepTimeMinutes: 15,
-    cookTimeMinutes: 30,
+    cookTimeMinutes: 60,
     servings: 6,
     dietaryTags: ["Vegetarian", "Gluten-Free"],
     image: { emoji: "🍚" },
@@ -1774,8 +1774,9 @@ export const recipes: Recipe[] = [
       {
         id: "steam",
         instruction:
-          "Cook over medium heat for about 4 minutes until you can smell the rice toasting, then reduce to low and steam for 20 minutes.",
-        timerMinutes: 20,
+          "Cook over medium heat for about 4 minutes until you can smell the rice toasting, then reduce to low and steam for 45-50 minutes without lifting the lid.",
+        tip: "Don't rush the steam — a real tahdig crust needs a long, gentle steam on low heat to turn deeply golden and crisp; 20 minutes isn't enough for the bottom layer to set.",
+        timerMinutes: 45,
       },
       {
         id: "unmold",
@@ -1800,7 +1801,7 @@ export const recipes: Recipe[] = [
     cuisine: "Persian",
     difficulty: "Hard",
     prepTimeMinutes: 20,
-    cookTimeMinutes: 30,
+    cookTimeMinutes: 55,
     servings: 6,
     dietaryTags: ["Vegetarian", "Gluten-Free"],
     image: { emoji: "💎" },
@@ -1938,8 +1939,8 @@ export const recipes: Recipe[] = [
       {
         id: "steam",
         instruction:
-          "Poke a few steam holes through the rice, cover with a towel-wrapped lid, and steam over low heat for 20 minutes until a golden crust forms on the bottom.",
-        timerMinutes: 20,
+          "Poke a few steam holes through the rice, cover with a towel-wrapped lid, and steam over low heat for 45 minutes until a golden crust forms on the bottom.",
+        timerMinutes: 45,
       },
       {
         id: "fold-jewels",

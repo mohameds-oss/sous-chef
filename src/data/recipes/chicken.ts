@@ -4,7 +4,7 @@ export const recipes: Recipe[] = [
   {
     id: "chicken-stir-fry",
     name: "Chicken Stir Fry",
-    cuisine: "Japanese",
+    cuisine: "Chinese",
     difficulty: "Easy",
     prepTimeMinutes: 10,
     cookTimeMinutes: 10,
@@ -697,7 +697,7 @@ export const recipes: Recipe[] = [
       {
         id: "marinate-2",
         instruction:
-          "Rub the paste all over the chicken thighs, working some under the skin, and let marinate for at least 10 minutes at room temperature.",
+          "Rub the paste all over the chicken thighs, working some under the skin, and let marinate for at least 10 minutes at room temperature (or refrigerate up to 24 hours for deeper, more authentic flavor).",
         timerMinutes: 10,
       },
       {
@@ -1909,7 +1909,7 @@ export const recipes: Recipe[] = [
     cuisine: "Persian",
     difficulty: "Hard",
     prepTimeMinutes: 15,
-    cookTimeMinutes: 35,
+    cookTimeMinutes: 70,
     servings: 4,
     dietaryTags: ["Gluten-Free", "Dairy-Free"],
     image: { emoji: "🌰" },
@@ -2031,9 +2031,9 @@ export const recipes: Recipe[] = [
       {
         id: "simmer-4",
         instruction:
-          "Bring to a gentle simmer, cover partially, and cook for 30-35 minutes, stirring occasionally, until the sauce is thick and the oil separates slightly at the surface.",
-        tip: "The sauce is done when a spoon dragged through the bottom of the pot leaves a brief trail — rushing this step leaves it thin and grainy instead of glossy.",
-        timerMinutes: 35,
+          "Bring to a gentle simmer, cover partially, and cook for 45-60 minutes, stirring occasionally, until the sauce is thick and the oil separates slightly at the surface.",
+        tip: "The sauce is done when a spoon dragged through the bottom of the pot leaves a brief trail — rushing this step leaves it thin and grainy instead of glossy. Fesenjan is traditionally simmered low and slow for at least 45 minutes so the walnuts fully release their oil.",
+        timerMinutes: 50,
       },
       {
         id: "balance",
@@ -2062,7 +2062,7 @@ export const recipes: Recipe[] = [
     name: "Saffron Chicken Kebabs",
     cuisine: "Persian",
     difficulty: "Medium",
-    prepTimeMinutes: 20,
+    prepTimeMinutes: 130,
     cookTimeMinutes: 20,
     servings: 4,
     dietaryTags: ["Gluten-Free"],
@@ -2158,8 +2158,9 @@ export const recipes: Recipe[] = [
       {
         id: "marinate-5",
         instruction:
-          "Add the chicken cubes to the marinade, toss to coat, and refrigerate for at least 15 minutes (or up to 8 hours).",
-        timerMinutes: 15,
+          "Add the chicken cubes to the marinade, toss to coat, and refrigerate for at least 2 hours (or up to 24 hours for the best flavor).",
+        tip: "The yogurt-saffron marinade is what makes this dish — a quick 15-minute soak barely seasons the surface. Traditional joojeh kabab is marinated for several hours and often overnight.",
+        timerMinutes: 120,
       },
       {
         id: "skewer",

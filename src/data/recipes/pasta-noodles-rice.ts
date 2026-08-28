@@ -1049,8 +1049,8 @@ export const recipes: Recipe[] = [
     name: "Pad Thai",
     cuisine: "Thai",
     difficulty: "Hard",
-    prepTimeMinutes: 15,
-    cookTimeMinutes: 15,
+    prepTimeMinutes: 20,
+    cookTimeMinutes: 10,
     servings: 2,
     dietaryTags: ["Pescatarian"],
     image: { emoji: "🍜" },
@@ -1472,7 +1472,7 @@ export const recipes: Recipe[] = [
   {
     id: "simple-fried-rice",
     name: "Simple Fried Rice",
-    cuisine: "Japanese",
+    cuisine: "Chinese",
     difficulty: "Easy",
     prepTimeMinutes: 5,
     cookTimeMinutes: 10,
@@ -1588,7 +1588,7 @@ export const recipes: Recipe[] = [
   {
     id: "shrimp-fried-rice",
     name: "Shrimp Fried Rice",
-    cuisine: "Japanese",
+    cuisine: "Chinese",
     difficulty: "Medium",
     prepTimeMinutes: 10,
     cookTimeMinutes: 10,
