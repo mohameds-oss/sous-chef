@@ -1,6 +1,5 @@
-// Prisma schema for Sous-Chef.
-// SQLite for local/demo use; swap datasource provider to "postgresql" and
-// DATABASE_URL for serverless deployment — models are portable as-is.
+// Prisma schema for Sous-Chef. Postgres-backed (works with Neon, Vercel
+// Postgres, Supabase, or any standard Postgres instance via DATABASE_URL).
 
 generator client {
   provider = "prisma-client"
@@ -8,7 +7,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
 }
 
 model User {

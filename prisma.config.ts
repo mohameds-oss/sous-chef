@@ -9,6 +9,6 @@ export default defineConfig({
   datasource: {
     // Used by `prisma migrate` / `prisma db push` / introspection only.
     // The running app builds its own adapter in src/lib/db.ts.
-    url: process.env["DATABASE_URL"] ?? "file:./prisma/dev.db",
+    url: process.env["DATABASE_URL"],
   },
 });
