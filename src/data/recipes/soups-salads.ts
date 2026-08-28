@@ -289,7 +289,7 @@ export const recipes: Recipe[] = [
     prepTimeMinutes: 5,
     cookTimeMinutes: 10,
     servings: 4,
-    dietaryTags: ["Vegetarian", "Dairy-Free", "Low-Carb"],
+    dietaryTags: ["Vegan", "Dairy-Free", "Low-Carb"],
     image: { emoji: "🍜" },
     description:
       "A delicate, savory dashi broth swirled with miso paste and studded with silky tofu and wakame seaweed.",
@@ -300,7 +300,7 @@ export const recipes: Recipe[] = [
         amount: 4,
         unit: "cup",
         category: "Pantry & Baking",
-        note: "prepared from dashi granules or kombu and bonito flakes",
+        note: "prepared from kombu (kelp) — use bonito-flake dashi instead for a non-vegetarian version",
         substitutions: ["vegetable broth"],
       },
       {
@@ -973,7 +973,7 @@ export const recipes: Recipe[] = [
     prepTimeMinutes: 15,
     cookTimeMinutes: 0,
     servings: 2,
-    dietaryTags: ["Vegetarian"],
+    dietaryTags: ["Pescatarian"],
     image: { emoji: "🥗" },
     description:
       "Crisp romaine tossed in a punchy, garlicky anchovy-Parmesan dressing and topped with crunchy homemade croutons.",
@@ -1465,7 +1465,7 @@ export const recipes: Recipe[] = [
     prepTimeMinutes: 10,
     cookTimeMinutes: 0,
     servings: 4,
-    dietaryTags: ["Vegetarian", "Gluten-Free"],
+    dietaryTags: ["Vegan", "Gluten-Free"],
     image: { emoji: "🌰" },
     description:
       "A jewel-toned Persian salad of tart pomegranate seeds, toasted walnuts, and fresh herbs tossed in a pomegranate molasses vinaigrette.",
